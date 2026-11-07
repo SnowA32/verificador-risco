@@ -1,0 +1,68 @@
+:root {
+  --fundo: #0b1626;
+  --cartao: rgba(14, 27, 46, 0.8);
+  --tinta: #e6edf7;
+  --suave: #9fb0c7;
+  --linha: #28405c;
+  --azul: #2563eb;
+  --foco: #8ab4ff;
+  --baixo: #4cc38a;
+  --medio: #e0a526;
+  --alto: #f0645a;
+  --apagado: #1b2b42;
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0; min-height: 100vh; background: var(--fundo); color: var(--tinta); font-family: "IBM Plex Sans", system-ui, "Segoe UI", sans-serif; line-height: 1.55; }
+.miolo { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.topo { background: rgba(8, 16, 30, 0.7); backdrop-filter: blur(8px); border-bottom: 1px solid var(--linha); color: #fff; }
+.barra { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+.barra span { color: #b6c4d8; font-size: 0.9rem; }
+main { padding-bottom: 48px; }
+h1 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); line-height: 1.2; margin: 36px 0 10px; max-width: 20em; }
+h2 { font-size: 1.05rem; margin: 0 0 14px; }
+.intro { color: var(--suave); max-width: 40em; margin: 0 0 28px; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+@media (max-width: 760px) { .grade { grid-template-columns: 1fr; } }
+.cartao { background: var(--cartao); backdrop-filter: blur(6px); border: 1px solid var(--linha); border-radius: 8px; padding: 22px; }
+label { display: block; font-weight: 500; margin-bottom: 8px; }
+textarea { width: 100%; min-height: 200px; resize: vertical; padding: 12px; font: inherit; color: inherit; background: var(--fundo); border: 1px solid var(--linha); border-radius: 6px; }
+button { font: inherit; cursor: pointer; border-radius: 6px; padding: 9px 18px; border: 1px solid var(--linha); background: transparent; color: var(--tinta); }
+button.principal { background: var(--azul); border-color: var(--azul); color: #fff; font-weight: 500; }
+button.principal:disabled { opacity: 0.6; cursor: wait; }
+button.leve { padding: 5px 12px; font-size: 0.9rem; }
+button.leve:hover { border-color: var(--tinta); }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.linha { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; }
+.apoio { color: var(--suave); font-size: 0.9rem; margin: 0; }
+.erro { color: var(--alto); margin: 12px 0 0; }
+.medidor { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 18px; }
+.nivel { height: 44px; border-radius: 6px; background: var(--apagado); color: var(--suave); display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 0.9rem; }
+.medidor[data-risco="BAIXO"] .n-baixo { background: var(--baixo); color: #0b1626; }
+.medidor[data-risco="MEDIO"] .n-medio { background: var(--medio); color: #0b1626; }
+.medidor[data-risco="ALTO"] .n-alto { background: var(--alto); color: #0b1626; }
+.veredito { font-size: 1.3rem; font-weight: 600; margin: 0 0 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 8px 0 0; list-style: none; }
+.chip { border: 1px solid var(--linha); border-left-width: 4px; border-radius: 4px; padding: 2px 10px; font-size: 0.88rem; }
+.chip.alto { border-left-color: var(--alto); }
+.chip.medio { border-left-color: var(--medio); }
+.chip.baixo { border-left-color: var(--baixo); }
+.cabecalho { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.cabecalho h2 { margin: 0; }
+.totais { display: flex; flex-wrap: wrap; gap: 28px; margin-bottom: 16px; }
+.totais div { font-size: 0.9rem; color: var(--suave); }
+.totais strong { display: block; font-size: 1.5rem; color: var(--tinta); line-height: 1.2; }
+.rolagem { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-top: 1px solid var(--linha); vertical-align: middle; }
+th { color: var(--suave); font-weight: 500; }
+.selo { font-weight: 600; }
+.selo.BAIXO { color: var(--baixo); }
+.selo.MEDIO { color: var(--medio); }
+.selo.ALTO { color: var(--alto); }
+select { font: inherit; color: inherit; background: var(--fundo); border: 1px solid var(--linha); border-radius: 6px; padding: 4px 8px; margin-right: 6px; }
+.rodape { color: var(--suave); font-size: 0.88rem; max-width: 46em; margin: 24px 0 0; }
+
+#fundo { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+.topo, main { position: relative; z-index: 1; }
+.cabecalho .apoio { margin-top: 2px; }

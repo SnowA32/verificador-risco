@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificador de risco para IA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<canvas id="fundo" aria-hidden="true"></canvas>
+<header class="topo">
+  <div class="miolo barra">
+    <strong>Verificador de risco para IA</strong>
+    <span>Feito por SalonSec</span>
+  </div>
+</header>
+
+<main class="miolo">
+  <h1>Esse texto pode ser enviado a uma IA pública?</h1>
+  <p class="intro">Cole o conteúdo antes de compartilhar. O sistema procura dados pessoais, credenciais, informações financeiras e estratégicas, e classifica o risco em baixo, médio ou alto.</p>
+
+  <div class="grade">
+    <section class="cartao">
+      <label for="texto">Texto a verificar</label>
+      <textarea id="texto" maxlength="5000" placeholder="Cole aqui o texto da empresa"></textarea>
+      <div class="linha">
+        <button id="analisar" type="button" class="principal">Analisar texto</button>
+        <span class="apoio">Exemplos:</span>
+        <button type="button" class="leve" data-exemplo="0">Alto</button>
+        <button type="button" class="leve" data-exemplo="1">Médio</button>
+        <button type="button" class="leve" data-exemplo="2">Baixo</button>
+      </div>
+      <p id="erro" class="erro" role="alert" hidden></p>
+    </section>
+
+    <section class="cartao" aria-live="polite">
+      <h2>Resultado</h2>
+      <div class="medidor" id="medidor" data-risco="">
+        <div class="nivel n-baixo">Baixo</div>
+        <div class="nivel n-medio">Médio</div>
+        <div class="nivel n-alto">Alto</div>
+      </div>
+      <p class="apoio" id="vazio">Cole um texto e clique em Analisar texto.</p>
+      <div id="resultado" hidden>
+        <p class="veredito" id="veredito"></p>
+        <p id="recomendacao"></p>
+        <p class="apoio">Itens encontrados</p>
+        <ul class="chips" id="gatilhos"></ul>
+      </div>
+    </section>
+  </div>
+
+  <section class="cartao historico">
+    <div class="cabecalho">
+      <div>
+        <h2>Histórico de análises</h2>
+        <p class="apoio">Visível apenas neste navegador. Ninguém mais tem acesso.</p>
+      </div>
+      <button type="button" class="leve" id="limpar" hidden>Apagar histórico</button>
+    </div>
+    <div class="totais" id="totais"></div>
+    <p class="apoio" id="hist-vazio">Nenhuma análise feita ainda.</p>
+    <div class="rolagem">
+      <table id="tabela" hidden>
+        <thead><tr><th>Nº</th><th>Data</th><th>Risco</th><th>Itens encontrados</th><th>Ações</th></tr></thead>
+        <tbody id="hist"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="rodape">O texto é enviado ao servidor apenas para a análise e não é gravado. O histórico guarda só o nível de risco e os itens encontrados, e fica salvo neste navegador. Em demonstrações, use dados fictícios.</p>
+</main>
+<script src="/script.js"></script>
+<script src="/fundo.js"></script>
+</body>
+</html>
