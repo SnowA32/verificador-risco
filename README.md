@@ -51,6 +51,8 @@ Antes da busca, o texto é convertido para minúsculas e os acentos são removid
 verificador-risco/
 ├── app.py
 ├── requirements.txt
+├── test_app.py
+├── LICENSE
 ├── README.md
 └── public/
     ├── index.html
@@ -129,6 +131,10 @@ As leis e orientações consultadas não trazem uma tabela que classifique cada 
 - Lei Geral de Proteção de Dados Pessoais (LGPD), Lei nº 13.709/2018
 - Guia Orientativo sobre Segurança da Informação para Agentes de Tratamento de Pequeno Porte, da ANPD
 - Orientação de Segurança da Informação e Cibernética OSIC 06/2023, do GSI
+
+## Licença
+
+Todos os direitos reservados. O código pode ser visualizado para fins de avaliação e estudo, mas não pode ser copiado, modificado, distribuído ou usado comercialmente sem autorização por escrito dos autores. Consulte o arquivo [LICENSE](LICENSE).
 
 ## Autoria
 

@@ -1,0 +1,43 @@
+LICENÇA DE USO - TODOS OS DIREITOS RESERVADOS
+
+Verificador de risco para IA
+Copyright (c) 2026 [NOME COMPLETO DOS AUTORES] (SalonSec). Todos os direitos reservados.
+
+1. TITULARIDADE
+Este software, incluindo o código-fonte, a interface, os textos, as regras de classificação e a documentação ("Software"), é obra intelectual protegida pela Lei nº 9.610/1998 (Direitos Autorais) e pela Lei nº 9.609/1998 (Programa de Computador). Todos os direitos pertencem aos autores acima. Nenhum direito é concedido além dos expressamente previstos nesta licença.
+
+2. USO PERMITIDO
+É permitido, sem autorização prévia:
+a) visualizar o código-fonte para fins de avaliação acadêmica ou estudo pessoal;
+b) acessar e utilizar o site publicado pelos autores;
+c) executar uma cópia local exclusivamente para avaliação, sem finalidade comercial e sem divulgação do resultado.
+
+3. USO PROIBIDO
+Sem autorização prévia e por escrito dos autores, é proibido:
+a) copiar, reproduzir ou duplicar o Software, no todo ou em parte;
+b) modificar, adaptar, traduzir ou criar obras derivadas;
+c) distribuir, publicar, hospedar ou disponibilizar o Software ou cópias dele, inclusive em repositórios, sites ou plataformas de terceiros;
+d) vender, alugar, sublicenciar ou explorar comercialmente o Software;
+e) apresentar o Software ou parte dele como de autoria própria;
+f) remover ou alterar avisos de direitos autorais e esta licença;
+g) utilizar o Software, o código ou as regras de classificação para treinar sistemas de inteligência artificial ou construir produto concorrente.
+
+4. AUTORIZAÇÕES
+Pedidos de autorização devem ser enviados aos autores pelo contato indicado ao final. A autorização só vale se for concedida por escrito.
+
+5. COMPONENTES DE TERCEIROS
+O Software utiliza componentes de terceiros, como Flask e fontes do Google Fonts, que continuam regidos por suas próprias licenças. Esta licença não altera os direitos de seus titulares.
+
+6. AUSÊNCIA DE GARANTIA
+O Software é fornecido "no estado em que se encontra", sem garantia de qualquer tipo, expressa ou implícita, inclusive de adequação a uma finalidade específica. O sistema é apoio à decisão e não substitui política de segurança da informação.
+
+7. LIMITAÇÃO DE RESPONSABILIDADE
+Os autores não respondem por danos diretos ou indiretos decorrentes do uso do Software, inclusive vazamento de informações, na máxima extensão permitida pela lei.
+
+8. VIOLAÇÃO
+O descumprimento desta licença encerra automaticamente as permissões concedidas e sujeita o infrator às sanções civis e penais previstas na legislação aplicável.
+
+9. FORO
+Fica eleito o foro da comarca de [CIDADE/UF], com renúncia a qualquer outro, para dirimir questões decorrentes desta licença.
+
+Contato para autorizações: [E-MAIL DOS AUTORES]
