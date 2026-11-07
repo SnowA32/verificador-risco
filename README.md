@@ -2,7 +2,7 @@
 
 Sistema que classifica o risco de um texto corporativo antes de ele ser enviado a uma inteligência artificial pública. O usuário cola o conteúdo, e o verificador indica se o risco é **baixo**, **médio** ou **alto** e mostra uma recomendação do que fazer.
 
-Projeto desenvolvido na disciplina de Cibersegurança, com o objetivo de reduzir o vazamento de informações da empresa por meio de ferramentas de IA.
+Projeto desenvolvido para minha Faculdade de Cibersegurança na Cesar School, com o objetivo de reduzir o vazamento de informações da empresa por meio de ferramentas de IA.
 
 ## Como funciona
 
